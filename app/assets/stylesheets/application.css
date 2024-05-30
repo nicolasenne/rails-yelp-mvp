@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.list-group-item p {
+margin: 0;
+}

@@ -1,9 +1,9 @@
 class ReviewsController < ApplicationController
   before_action :set_restaurant, only: %i[index new create]
 
-  def index
-    @reviews = Review.all
-  end
+  # def index
+  #   @reviews = Review.all
+  # end
 
   def new
     @restaurant = Restaurant.find(params[:restaurant_id])
@@ -24,6 +24,6 @@ class ReviewsController < ApplicationController
   end
 
   def review_params
-    params.require(:review).permit(:content)
+    params.require(:review).permit(:rating, :content)
   end
 end

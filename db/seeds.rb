@@ -9,10 +9,10 @@
 Restaurant.destroy_all if Rails.env.development?
 
 Restaurant.create!(
-  name: "C'est Bon C'est Belge",
-  address: "Rue du Bon-Secours, Brussel",
+  name: "McDonald's",
+  address: "Av. Rebouças, São Paulo",
   phone_number: "+321 23 45 67 89",
-  category: "belgian"
+  category: "brazilian"
 )
 
 Restaurant.create!(
@@ -30,7 +30,7 @@ Restaurant.create!(
 )
 
 Restaurant.create!(
-  name: "Teppanyaki Restaurant Sazanka",
+  name: "Teppanyaki Sazanka",
   address: "Ferdinand Bolstraat, Amsterdam",
   phone_number: "+311 23 45 67 89",
   category: "japanese"
