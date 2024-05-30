@@ -1,7 +1,12 @@
-<h2><%= @restaurant.name %></h2>
-<p><%= @restaurant.address %></p>
-<p><%= @restaurant.phone_number %></p>
-<p><%= @restaurant.category %></p>
+<div class="card p-4 mb-4">
+  <h2 class="fw-bold"><%= @restaurant.name %></h2>
+  <hr>
+  <p><i class="fa-solid fa-location-dot me-2"></i> <%= @restaurant.address %></p>
+  <hr>
+  <p><i class="fa-solid fa-mobile-screen me-2"></i> <%= @restaurant.phone_number %></p>
+  <hr>
+  <p><i class="fa-solid fa-list me-2"></i> <%= @restaurant.category.capitalize %></p>
+</div>
 
 <p><strong>Reviews</strong></p>
 <ul class="list-group">

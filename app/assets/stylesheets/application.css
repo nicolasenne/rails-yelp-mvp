@@ -20,6 +20,6 @@
   gap: 20px;
 }
 
-.list-group-item p {
+.card p, .list-group-item p {
 margin: 0;
 }

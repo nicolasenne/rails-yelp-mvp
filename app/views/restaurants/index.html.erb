@@ -8,7 +8,7 @@
       <li class="list-group-item"><%= restaurant.category.capitalize %></li>
     </ul>
     <div class="card-body">
-      <%= link_to "See details", restaurant_path(restaurant) %>
+      <%= link_to "See details", restaurant_path(restaurant), class: "text-decoration-none" %>
     </div>
   </div>
 <% end %>
